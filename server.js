@@ -31,7 +31,7 @@ myBot.onText(gempa, async (msg) => {
     myBot
       .sendMessage(
         chatId,
-        `Tanggal : ${Tanggal}\nJam : ${Jam}\nMagnitude : ${Magnitude}\nKedalaman : ${Kedalaman}\nWilayah : ${Wilayah}`
+        `Tanggal : ${Tanggal}\nJam : ${Jam}\nMagnitude : ${Magnitude} SR \nKedalaman : ${Kedalaman}\nWilayah : ${Wilayah}`
       )
       .then(() =>
         myBot.sendLocation(chatId, parseFloat(Lintang), parseFloat(Bujur))
